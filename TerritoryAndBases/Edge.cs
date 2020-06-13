@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace TerritoryAndBases
 {
+    [Serializable]
     public class Edge
     {
         public Vertex FirstVertex { get; set; }
@@ -16,7 +17,7 @@ namespace TerritoryAndBases
         {
             FirstVertex = first;
             SecondVertex = second;
-            Weight = (FirstVertex.ControlDistance + SecondVertex.ControlDistance) / 2;
+            Weight = (FirstVertex.TerritorySize + SecondVertex.TerritorySize) / 2;
         }
     }
 }

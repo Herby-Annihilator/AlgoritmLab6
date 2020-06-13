@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace TerritoryAndBases
 {
+    [Serializable]
     public class Vertex
     {
         public int Index { get; set; }
@@ -23,5 +24,18 @@ namespace TerritoryAndBases
         }
 
         public List<Edge> Edges { get; set; }
+
+        public bool RemoveEdge(Edge edge)
+        {
+            for (int i = 0; i < Edges.Count; i++)
+            {
+                if (Edges[i].Equals(edge))
+                {
+                    Edges.RemoveAt(i);
+                    return true;
+                }
+            }
+            return false;
+        }
     }
 }
