@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ColorGraph;
+using LibraryForAlgLab;
+using System.IO;
 
 namespace TerritoryAndBases
 {
@@ -99,6 +101,7 @@ namespace TerritoryAndBases
                     regions.Add(Vertices[i].Index);
                 }
             }
+            GraphHelper.SaveMatrixToFile("output.dat", CreateAdjacencyMatrix());
 
             ColorGraph.ColorGraph colorGraph = new ColorGraph.ColorGraph(CreateAdjacencyMatrix(), null);
             List<int> list;
@@ -157,10 +160,17 @@ namespace TerritoryAndBases
             }
             for (int i = 0; i < Edges.Count; i++)
             {
-                matrix[Edges[i].FirstVertex.Index][Edges[i].SecondVertex.Index] = 1;
-                matrix[Edges[i].SecondVertex.Index][Edges[i].FirstVertex.Index] = 1;
+                matrix[Edges[i].FirstVertex.Index][Edges[i].SecondVertex.Index] = Edges[i].Weight;
+                matrix[Edges[i].SecondVertex.Index][Edges[i].FirstVertex.Index] = Edges[i].Weight;
             }
             return matrix;
+        }
+        public void UpdateEdgesData()
+        {
+            for (int i = 0; i < Edges.Count; i++)
+            {
+                Edges[i].Weight = (Edges[i].FirstVertex.TerritorySize + Edges[i].SecondVertex.TerritorySize) / 2;
+            }
         }
     }
 }

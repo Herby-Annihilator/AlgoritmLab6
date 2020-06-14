@@ -1,0 +1,10 @@
+D:\Проекты  в студии\MilitaryBases\TerritoryAndBases\bin\Debug\TerritoryAndBases.dll
+D:\Проекты  в студии\MilitaryBases\TerritoryAndBases\bin\Debug\TerritoryAndBases.pdb
+D:\Проекты  в студии\MilitaryBases\TerritoryAndBases\bin\Debug\ColorGraph.dll
+D:\Проекты  в студии\MilitaryBases\TerritoryAndBases\bin\Debug\LibraryForAlgLab.dll
+D:\Проекты  в студии\MilitaryBases\TerritoryAndBases\bin\Debug\ColorGraph.pdb
+D:\Проекты  в студии\MilitaryBases\TerritoryAndBases\bin\Debug\LibraryForAlgLab.pdb
+D:\Проекты  в студии\MilitaryBases\TerritoryAndBases\obj\Debug\TerritoryAndBases.csprojAssemblyReference.cache
+D:\Проекты  в студии\MilitaryBases\TerritoryAndBases\obj\Debug\TerritoryAndBases.csproj.CopyComplete
+D:\Проекты  в студии\MilitaryBases\TerritoryAndBases\obj\Debug\TerritoryAndBases.dll
+D:\Проекты  в студии\MilitaryBases\TerritoryAndBases\obj\Debug\TerritoryAndBases.pdb
